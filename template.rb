@@ -1,5 +1,5 @@
 #
-# startupdev-rails-template
+# startupdev-rails-template base
 #
 # Usage:
 #   rails new appname -m /path/to/template.rb
@@ -54,7 +54,7 @@ def ask_unless_test(*params)
 end
 
 puts "\n========================================================="
-puts " STARTUPDEV RAILS 3 TEMPLATE".yellow.bold
+puts " RAILS 3 TEMPLATE".yellow.bold
 puts "=========================================================\n"
 
 # TODO: timezone, Add rspec extensions
@@ -63,13 +63,9 @@ apply_n :git
 apply_n :cleanup
 apply_n :gems
 apply_n :database
-apply_n :rspec      # TODO: rspec nao rolou no projeto POL, add simplecov.
 apply_n :default
-apply_n :fakeweb
-apply_n :omniauth
 apply_n :capybara
 apply_n :generators
-apply_n :canonical_host
 apply_n :rvm
 apply_n :finish
 
@@ -78,12 +74,6 @@ if ENV['RAILS_TEMPLATE_TEST'] == 'true'
     run "rake"
   end
 end
-
-apply_n :heroku
-
-# apply_n :omniauth # TODO: add spec support files
-                    # TODO: take care of facebook when user is not logged in on facebook (when app)
-# TODO: extrair phone validator to gem
 
 puts "\n========================================================="
 puts " CONGRATS! INSTALLATION COMPLETE!".yellow.bold

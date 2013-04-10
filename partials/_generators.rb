@@ -9,9 +9,6 @@ generators = <<GENERATORS
       g.assets false
       g.integration_tool false
     end
-    config.app_generators do |g|
-      g.test_framework :rspec
-    end
 
     # Prevent initializing your application and connect to the database on assets precompile.
     config.assets.initialize_on_precompile = false

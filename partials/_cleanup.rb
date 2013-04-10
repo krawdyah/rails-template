@@ -6,7 +6,6 @@ git :commit => "-aqm 'Commit new rails app.'"
 puts "Removing unnecessary files ... ".magenta
 
 remove_file "README"
-remove_file "app/views/layouts/application.html.erb"
 remove_file "app/assets/images/rails.png"
 
 inside "public" do
